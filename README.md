@@ -5,7 +5,9 @@ This is a Next.js project built by the SNHU students on SNHU Discord. The websit
 ## Resources
 
 [Discord Link](https://discord.gg/snhu)
+
 [SQL Dump for local development.](https://snhudiscord.s3.amazonaws.com/railway_SNHU_DB-2023_04_28_12_42_38-dump.sql) 
+
 [Kanban - Github Projects](https://github.com/orgs/SNHUStudents/projects/2)
 
 ## Getting Started
