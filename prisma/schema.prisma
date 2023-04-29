@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model courses {
+  id              BigInt  @id @unique(map: "id") @default(autoincrement()) @db.UnsignedBigInt
+  course_code     String? @db.Text
+  course_name     String? @db.Text
+  degree_type     String? @db.Text
+  course_offering String? @db.Text
+  s3_link         String? @db.Text
+  syllabus_link   String? @db.Text
+  sophia          String? @db.Text
+  study           String? @db.Text
+  modern_states   String? @db.Text
+  certificate     String? @db.Text
+  straighterline  String? @db.Text
+  associates      String? @db.Text
+  bachelors       String? @db.Text
+  masters         String? @db.Text
+}
+
+model degree_names {
+  id              BigInt  @id @unique(map: "id") @default(autoincrement()) @db.UnsignedBigInt
+  degree_name     String? @db.Text
+  degree_offering String? @db.Text
+  degree_type     String? @db.Text
+}
