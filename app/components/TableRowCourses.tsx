@@ -13,7 +13,7 @@ interface CourseProps {
 let linker = (link: string | undefined) => {
   if (link) {
     return (
-      <a target="_blank" rel="norefferer" href={link}>
+      <a target="_blank" rel="noreferrer" href={link}>
         Link
       </a>
     )
